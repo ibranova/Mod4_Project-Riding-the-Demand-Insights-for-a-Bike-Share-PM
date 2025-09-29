@@ -1,5 +1,6 @@
 # Riding the Demand: Insights for a Bike-Share PM
-
+![alt text](figures/p_bike.jpg)
+## Project Owner: [Ibrahima Diallo](https://www.linkedin.com/ibranova)
 ## Business Framing and Stakeholders
 
 This project analyzes hourly bike-share usage data to uncover demand patterns and generate actionable insights for key stakeholders:
