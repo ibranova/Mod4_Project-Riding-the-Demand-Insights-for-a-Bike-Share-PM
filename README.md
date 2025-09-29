@@ -1,5 +1,4 @@
 # Riding the Demand: Insights for a Bike-Share PM
-![alt text](figures/p_bike.jpg)
 ## Project Owner: [Ibrahima Diallo](https://www.linkedin.com/ibranova)
 ## Business Framing and Stakeholders
 
@@ -97,4 +96,3 @@ The feature change did not produce a statistically significant increase in commu
 * **Assumptions:** Normality/variance may not fully hold, even if we used a great test. 
 * **Equity Risks:** Only focusing on commuter-heavy times could disadvantage casual riders and weekend riders. 
 * **Ethics:** Check or rebalance shift bikes away from certain neighborhoods or times that disadvantage particular user groups.
-
