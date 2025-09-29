@@ -1,4 +1,6 @@
 # Riding the Demand: Insights for a Bike-Share PM
+<img width="558" height="379" alt="Screenshot 2025-09-29 at 2 37 54 AM" src="https://github.com/user-attachments/assets/b454debc-ac44-458a-8020-d94a0b8f3099" />
+
 ## Project Owner: [Ibrahima Diallo](https://www.linkedin.com/ibranova)
 ## Business Framing and Stakeholders
 
