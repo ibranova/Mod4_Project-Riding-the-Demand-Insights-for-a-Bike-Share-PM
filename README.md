@@ -15,24 +15,26 @@ This project analyzes hourly bike-share usage data to uncover demand patterns an
 
 * **Exploratory Data Analysis (EDA):**
 
-  * Descriptive summaries, groupby analyses, and visualizations (time-series, boxplots, histograms, heatmaps).
+  * Imported the data using the pandas library in Python, checked for missing and duplicated values, and then performed data cleaning and feature engineering for some columns to better understand the data. For example, instead of having months in numbers starting from 0-12, I created a dictionary named Month_name in Python to map each number to its corresponding month. Next, I explored hourly ridership across time, season, weather, and user segments. Used descriptive statistics and visualizations (time-series plots, boxplots, histograms, heatmaps).
 * **Hypothesis Testing:**
 
-  * **Q1:** Working vs. non-working days (Welch’s t-test).
-  * **Q2:** Seasonal differences (One-way ANOVA + Tukey HSD post-hoc).
+  * **Q1:** Compared average hourly rides between working vs. non-working days
+     * For this hypothesis, I chose a Welch’s t-test because the data are independent and approximately normally distributed. Also, the sample is large, and we are comparing the means of two groups. (a.k.a. pairwise comparison).
+  * **Q2:** Tested if mean hourly rides differ across seasons.
+     * I used a `one-way ANOVA with post-hoc Tukey HSD` to perform this test because we are analyzing the difference between the means of more than 2 samples.
 * **Simulated A/B Test:**
 
-  * Stratified balancing across weekday × hour × weather.
+  * Measured the impact of a feature launch on early evening commuter-hour ridership. Designed with stratified balancing across weekday × hour × weather
   * Compared pre- vs. post-launch commuter-hour ridership.
 
 ---
 
 ## Top 3 Trends/Insights
 
-1. **Seasonality Drives Demand:** Summer/fall peaks, winter lows → informs **Ops** staffing and maintenance planning.
-2. **Commuter Peaks Dominate Weekdays:** 8–9 AM and 5–7 PM are the strongest demand windows → critical for **PM** feature design and **Marketing** targeting.
-3. **Weather Sensitivity:** Clear/misty days with low humidity boost rides → enables **Marketing** to time promotions and **Ops** to anticipate sudden drops.
-
+1. **Seasonal Demand is Strongly Cyclical:** Summer and fall show peak ridership, while winter dips significantly. It helps Ops plan maintenance in low-demand months.
+   ![Average ride by season](avg_rides_by_season.png)
+3. **Commuter Peaks Dominate Weekdays:** 8–9 AM and 5–7 PM are the highest ridership windows, especially for registered riders. This is critical for PM/Ops planning and Marketing targeting.
+4. **Weather & Humidity Drive Demand:** Clear or misty days with humidity ≤ 70% see much higher ridership, while rain and snow sharply reduce usage. → Enables Marketing to time promos and Ops to anticipate sudden drops.
 ---
 
 ## Hypothesis Testing Results
