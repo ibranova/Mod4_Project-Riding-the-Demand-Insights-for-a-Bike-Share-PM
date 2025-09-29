@@ -1,6 +1,6 @@
 # Riding the Demand: Insights for a Bike-Share PM
 
-## 📌 Business Framing and Stakeholders
+## Business Framing and Stakeholders
 
 This project analyzes hourly bike-share usage data to uncover demand patterns and generate actionable insights for key stakeholders:
 
@@ -11,7 +11,7 @@ This project analyzes hourly bike-share usage data to uncover demand patterns an
 
 ---
 
-## 🔍 Methods Summary
+## Methods Summary
 
 * **Exploratory Data Analysis (EDA):**
 
@@ -27,7 +27,7 @@ This project analyzes hourly bike-share usage data to uncover demand patterns an
 
 ---
 
-## 📈 Top 3 Trends/Insights
+## Top 3 Trends/Insights
 
 1. **Seasonality Drives Demand:** Summer/fall peaks, winter lows → informs **Ops** staffing and maintenance planning.
 2. **Commuter Peaks Dominate Weekdays:** 8–9 AM and 5–7 PM are the strongest demand windows → critical for **PM** feature design and **Marketing** targeting.
@@ -35,7 +35,7 @@ This project analyzes hourly bike-share usage data to uncover demand patterns an
 
 ---
 
-## 🧪 Hypothesis Testing Results
+## Hypothesis Testing Results
 
 | Question                         | Test                      | α    | Test Statistic | p-value | 95% CI              | Decision  | Practical Significance        |
 | -------------------------------- | ------------------------- | ---- | -------------- | ------- | ------------------- | --------- | ----------------------------- |
@@ -44,7 +44,7 @@ This project analyzes hourly bike-share usage data to uncover demand patterns an
 
 ---
 
-## 🧩 A/B Test Results (Commuter-Hour Focus)
+## A/B Test Results (Commuter-Hour Focus)
 
 * **Setup:** Pre (Aug 4–31, 2012) vs. Post (Sep 1–28, 2012), stratified by weekday × hour × weather.
 * **Metric:** Average hourly rides (17–19h, working days, clear/misty weather, humidity ≤ 0.70).
@@ -60,7 +60,7 @@ This project analyzes hourly bike-share usage data to uncover demand patterns an
   * 95% CI: [−0.2, +12.4]
 * **Decision:** Fail to reject H0.
 * **Practical Significance:** +6 rides/hour (above +5 threshold) → meaningful but uncertain.
-* **Recommendation:** Pilot with larger or randomized sample.
+* **Recommendation:** Pilot with a larger or randomized sample.
 
 ---
 
